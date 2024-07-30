@@ -1,0 +1,579 @@
+@media (max-width: 850px) {
+	/* Print */
+	@media print {
+		@page {
+			margin: 5mm;
+		}
+	}
+	html:has(.payment-area),
+	body:has(.payment-area) {
+		width: 800px;
+	}
+	.payment-area.section-padding .form-box.mb-0.print {
+		overflow: visible;
+	}
+	.payment-area.section-padding .form-box.mb-0.print .payment-received-list {
+		padding: 20px;
+	}
+	.payment-area.section-padding > div > .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.payment-area.section-padding > div > .row > .col-lg-12.d-flex.justify-content-center {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.payment-area .form-content {
+		padding: 0;
+	}
+	.payment-area .form-content button.btn {
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+}
+@media (max-width: 767px) {
+	.header-area .logo img {
+		object-fit: cover;
+	}
+	.main-menu-content nav {
+		padding-left: 0 !important;
+	}
+	.main-menu-content .justify-content-end {
+		flex-direction: column;
+		row-gap: 10px;
+	}
+	.main-menu-content .justify-content-end .ms-1 {
+		margin-left: 0 !important;
+	}
+	.footer-area .col-lg-3 > .footer-item {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		margin-bottom: 21px;
+		align-items: flex-start;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.footer-area .col-lg-9 ul.dropdown-menu-item {
+		display: block !important;
+	}
+	.footer-area .col-lg-9 ul.foot_menu.w-100 {
+		margin-bottom: 5px;
+	}
+	.footer-area .col-lg-9 li.footm:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	.float {
+		width: 45px !important;
+		height: 45px !important;
+		line-height: 40px !important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.float .my-float {
+		margin-top: 0;
+	}
+	.footer-area ul.list-items.pt-3 {
+		text-align: center;
+		padding-top: 10px !important;
+		width: 100%;
+	}
+
+	/* home */
+	main.texttrans {
+		font-size: 1.13rem;
+	}
+	.info-area {
+		padding-bottom: 0px !important;
+		padding-top: 50px !important;
+		z-index: 11;
+	}
+	.datepicker.dropdown-menu {
+		max-height: 60vh !important;
+		height: 372px !important;
+		top: 60px !important;
+		overflow-y: auto !important;
+		width: calc(100% - 24px) !important;
+		left: 50% !important;
+		transform: translateX(-50%);
+	}
+	.datepicker.dropdown-menu td.day.old,
+	.datepicker.dropdown-menu td.day.new {
+		pointer-events: none;
+		font-size: 0;
+		height: 0;
+		border: none;
+		visibility: hidden;
+	}
+	.datepicker.dropdown-menu tbody tr:not(:has([class='day ']), :has([class='day disabled'])) {
+		display: none;
+	}
+	section.breadcrumb-area.bread-bg-flights section.container[style*='padding:100px'] {
+		padding-top: 40px !important;
+		padding-bottom: 30px !important;
+	}
+	section.breadcrumb-area.bread-bg-flights {
+		background-size: cover;
+		background-position: 0% 0;
+	}
+	.info-area .col-lg-4.responsive-column p.info__desc {
+		line-height: 1.25;
+		padding-bottom: 8px;
+		margin-top: 7px;
+		font-size: 10px;
+	}
+	.info-area .col-lg-4.responsive-column .info-icon.flex-shrink-0 {
+		width: 23px;
+		margin-right: 8px;
+		height: auto;
+		line-height: 1;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		font-size: 17px;
+	}
+	div#onereturn.contact-form-action div#swap {
+		margin-top: -2px !important;
+	}
+	div#onereturn.contact-form-action div#swap .swap-places {
+		margin-top: 0;
+		margin-left: 0;
+		transform: rotate(90deg);
+	}
+	.datepicker table tr td.day:hover,
+	.datepicker table tr td.day.focused {
+		background: #ffeb3b33;
+	}
+	.footer-area .footm li {
+		margin-top: 0;
+		line-height: 1.4;
+	}
+	.footer-area .dropdown-menu-item a {
+		font-size: 11.5px !important;
+	}
+	.term-box .list-items {
+		font-size: 14px;
+	}
+	.footer-area {
+		padding-top: 12px !important;
+	}
+	section.breadcrumb-area.bread-bg-flights section.container[style*='padding:100px']::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 19px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 300px;
+		height: 31px;
+		background: var(--bg-image);
+		background-size: 890px;
+		background-position: -305px 516px;
+		border-radius: 9px;
+		background-blend-mode: overlay;
+	}
+	section.breadcrumb-area.bread-bg-flights section.container[style*='padding:100px'] > .container::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 19px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 300px;
+		height: 31px;
+		border-radius: 9px;
+		background-image: url("data:image/svg+xml,%3Csvgxmlns='http://www.w3.org/2000/svg'viewBox='0046055'%3E%3Cgfill='none'fill-rule='evenodd'stroke='%23fff'stroke-width='7'opacity='.1'%3E%3Cpathd='M-34534.5s57.5-13.8115-13.811513.811513.8S-57.548.3048.3s115-13.8115-13.857.5-13.8115-13.811513.811513.857.513.811513.8115-13.8115-13.8'/%3E%3Cpathd='M-34520.7s57.5-13.8115-13.811513.811513.8S-57.534.5034.5s115-13.8115-13.8S172.56.92306.9s11513.811513.857.513.811513.8115-13.8115-13.8m-92027.6s57.5-13.8115-13.811513.811513.8S-57.562.1062.1s115-13.8115-13.857.5-13.8115-13.811513.811513.857.513.811513.8115-13.8115-13.8'/%3E%3Cpathd='M-3456.9s57.5-13.8115-13.8S-1156.9-1156.9-57.520.7020.71156.91156.9172.5-6.9230-6.93456.93456.9s57.513.811513.8S5756.95756.9'/%3E%3Cpathd='M-345-6.9s57.5-13.8115-13.8S-115-6.9-115-6.9-57.56.906.9115-6.9115-6.9s57.5-13.8115-13.8S345-6.9345-6.9402.56.94606.9575-6.9575-6.9m-92069s57.5-13.8115-13.811513.811513.8S-57.575.9075.9s115-13.8115-13.857.5-13.8115-13.811513.811513.857.513.811513.8115-13.8115-13.8'/%3E%3C/g%3E%3C/svg%3E%0A"), linear-gradient(80deg, #000, #01060d);
+		opacity: 0.5;
+	}
+	.footer-area .col-lg-3 > .footer-item img {
+		width: 110px;
+	}
+	.footer-area .col-lg-3 > .footer-item .footer-logo.padding-bottom-10px {
+		padding-bottom: 0;
+	}
+	.datepicker table tr td.day {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.info-area .icon-box {
+		margin-bottom: 0;
+		background: transparent !important;
+	}
+	.icon-layout-2 .info__title {
+		font-size: 11px;
+	}
+	.icon-layout-2 .info-content {
+		padding-top: 0 !important;
+	}
+	.footer-area ul.list-items.pt-3 li {
+		font-size: 10px;
+		text-align: left;
+		line-height: 1.7;
+	}
+	.footer-area .footm a {
+		font-size: 15px;
+	}
+	.info-area > .container > .row:nth-child(2) {
+		position: absolute;
+		z-index: 1111;
+		width: 60%;
+		top: 95%;
+		right: 18px;
+		margin-top: 12vw;
+	}
+	.footer-area ul.list-items.pt-3 li:nth-child(2) {
+		white-space: normal;
+		max-width: 36%;
+	}
+	.footer-area ul.list-items.pt-3 li:first-child {
+		margin-left: -3px;
+	}
+
+	/* flight-page */
+	.col-md-9 .theme-search-results-item .row .row-no-gutter div:nth-child(2) .row {
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.theme-search-results-item .col-md-8.col-12 {
+		margin-bottom: 0px !important;
+		margin-top: 7px !important;
+	}
+	.theme-search-results-item-preview .col-md-3.col-3 {
+		width: auto !important;
+		padding: 0;
+	}
+	.theme-search-results-item-preview .col-md-6.col-6.g-0 {
+		width: 20% !important;
+		position: relative;
+		line-height: 1;
+	}
+	.theme-search-results-item-flight-section-meta.mb-0 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0;
+		margin: auto;
+		flex-direction: column;
+	}
+	h5.theme-search-results-item-flight-section-airline-title.mb-0:first-child {
+		display: none;
+	}
+	.theme-search-results-item-flight-section-path {
+		position: absolute;
+		top: -25px;
+		width: 120px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.theme-search-results-item-flight-section-airline-logo {
+		margin-top: 0;
+		margin-bottom: 0;
+		width: 60px;
+		height: 25px;
+		object-fit: contain;
+		position: absolute;
+		top: 0;
+		transform: translate(-50%, -33%);
+		left: 34px;
+		opacity: 0.8;
+		z-index: -20;
+	}
+	.theme-search-results-item-flight-section-item > .row:nth-child(2) {
+		font-size: 12px;
+		margin-top: -23px;
+	}
+	.theme-search-results-item.theme-search-results-item-rounded.theme-search-results-item- > .row.g-0 {
+		flex-direction: column;
+	}
+	.theme-search-results-item.theme-search-results-item-rounded.theme-search-results-item- > .row.g-0 > .col-md-10 {
+		width: auto;
+		flex: 1;
+	}
+	.theme-search-results-item.theme-search-results-item-rounded.theme-search-results-item- > .row.g-0 > .col-md-2 {
+		position: relative;
+		order: -1;
+	}
+	.theme-search-results-item.theme-search-results-item-rounded.theme-search-results-item- > .row.g-0 > .col-md-2 .d-md-block.d-flex.pe-3.ps-3.p-md-0 {
+		padding: 0 !important;
+		flex-direction: row-reverse;
+	}
+	.theme-search-results-item-flight-section-meta.mb-0 > p:last-child {
+		line-height: 1em;
+		font-size: 11px;
+	}
+	.theme-search-results-item .col-md-2.col-12 > .d-md-block.d-flex.justify-content-around {
+		column-gap: 5px;
+		justify-content: flex-start !important;
+	}
+	.theme-search-results-item .col-md-2.col-12 > .d-md-block.d-flex.justify-content-around > p.d-flex.align-items-center:nth-child(2) {
+		display: none !important;
+	}
+	.theme-search-results-item form {
+		display: flex;
+		align-items: flex-end;
+		padding-left: 0;
+		padding-right: 10px;
+		justify-content: flex-end;
+	}
+	.theme-search-results-item.theme-search-results-item-rounded.theme-search-results-item- > .row.g-0 > .col-md-2 .d-md-block.d-flex.pe-3.ps-3.p-md-0 span.btn.btn-primary::before {
+		content: 'Book';
+		font-size: 11px;
+	}
+	.theme-search-results-item.theme-search-results-item-rounded.theme-search-results-item- > .row.g-0 > .col-md-2 .d-md-block.d-flex.pe-3.ps-3.p-md-0 span.btn.btn-primary {
+		font-size: 0;
+		margin-top: 10px;
+		width: 100px;
+		padding: 17px 0 3px;
+		margin-top: 2px;
+	}
+	.theme-search-results-item .col-md-2.col-12 > .d-md-block.d-flex.justify-content-around p.d-flex.align-items-center {
+		font-size: 11px;
+		gap: 3px !important;
+	}
+	.theme-search-results-item .col-md-2.col-12 > .d-md-block.d-flex.justify-content-around p.d-flex.align-items-center i.la {
+		font-size: 20px !important;
+	}
+	.theme-search-results-item .col-md-2.col-12 > .d-md-block.d-flex.justify-content-around p.d-flex.align-items-center img {
+		width: 18px;
+	}
+	.theme-search-results-item-flight-section-meta > p {
+		margin: 3px 0;
+	}
+	section.breadcrumb-area.bread-bg-flights button#search_filter {
+		line-height: 1.5;
+		min-width: 0;
+	}
+	section.breadcrumb-area.bread-bg-flights button.accordion-button.btn.btn-outline-light {
+		width: auto !important;
+		padding: 10px 18px;
+		flex: 1;
+		min-width: 161px;
+	}
+	.theme-search-results-item.theme-search-results-item-rounded.theme-search-results-item- > .row.g-0 > .col-md-10:has(> .collapsing),
+	.theme-search-results-item.theme-search-results-item-rounded.theme-search-results-item- > .row.g-0 > .col-md-10:has(> .show) {
+		width: 100%;
+		flex: none;
+	}
+	.theme-search-results-item-flight-details-schedule-list .col-6 {
+		width: 100%;
+	}
+	.theme-search-results-item-flight-details-schedule-destination-title {
+		line-height: 2;
+	}
+	.theme-search-results-item.theme-search-results-item-rounded.theme-search-results-item- > .row.g-0:has(.collapsing) > .col-md-2,
+	.theme-search-results-item.theme-search-results-item-rounded.theme-search-results-item- > .row.g-0:has(.show) > .col-md-2 {
+		width: 100%;
+		float: none;
+	}
+	.theme-search-results-item.theme-search-results-item-rounded.theme-search-results-item- > .row.g-0:has(.collapsing),
+	.theme-search-results-item.theme-search-results-item-rounded.theme-search-results-item- > .row.g-0:has(.show) {
+		flex-direction: column;
+	}
+	.theme-search-results-item .col-md-2.col-12 > .d-md-block.d-flex.justify-content-around > p.d-flex.align-items-center:nth-child(2) i.la {
+		font-size: 0 !important;
+	}
+	.theme-search-results-item .col-md-2.col-12 > .d-md-block.d-flex.justify-content-around > p.d-flex.align-items-center:nth-child(2)::before {
+		content: 'Detail >';
+		font-size: 12px;
+		color: var(--theme);
+	}
+	.theme-search-results-item-flight-section-path-line-start {
+		margin-top: 15px;
+		left: 0;
+	}
+	.theme-search-results-item-flight-section-path-line-middle {
+		width: auto;
+		margin-top: 22px;
+	}
+	.theme-search-results-item-flight-sections .theme-search-results-item-flight-section > .row-no-gutter.row-eq-height.row {
+		position: relative;
+	}
+	.theme-search-results-item-flight-sections .theme-search-results-item-flight-section > .row-no-gutter.row-eq-height.row > .col-md-2.col-12:first-child {
+		order: 2;
+		margin-top: -27px;
+	}
+	.theme-search-results-item-preview + .theme-search-results-item-preview {
+		padding-top: 0;
+		border-top: 1px dashed #b9b9b9;
+	}
+	.theme-search-results-item-preview:first-child {
+		padding-top: 5px;
+		padding-bottom: 7px;
+	}
+	.theme-search-results-item-flight-sections .theme-search-results-item-flight-section {
+		border-bottom: 0;
+	}
+	.theme-search-results-item.theme-search-results-item-rounded.theme-search-results-item- > .row.g-0 > .col-md-2 .d-md-block.d-flex.pe-3.ps-3.p-md-0 button.btn.btn-block {
+		padding-top: 2px;
+		font-size: 13px;
+		flex-direction: column;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		z-index: 100;
+		top: 168px;
+		right: 8px;
+		width: auto;
+	}
+	.theme-search-results-item.theme-search-results-item-rounded.theme-search-results-item- > .row.g-0 > .col-md-2 .d-md-block.d-flex.pe-3.ps-3.p-md-0 p.d-flex.align-items-center.justify-content-center {
+		align-items: flex-end !important;
+		margin-bottom: 7px;
+		font-size: 14px;
+		position: absolute;
+		top: 68px;
+		right: 20px;
+	}
+	.theme-search-results-item-flight-details-info {
+		padding: 5px 1em 0 !important;
+		margin-bottom: 0;
+	}
+	.theme-search-results-item-flight-details-info-fly-time {
+		display: none;
+	}
+	.theme-search-results-item-flight-details-info-date {
+		display: none;
+	}
+	.theme-search-results-item-preview:nth-last-child(2) {
+		padding-bottom: 16px;
+	}
+	.theme-search-results-item-flight-section-airline-logo-wrap {
+		text-align: left;
+	}
+	.theme-search-results-item-flight-section-airline-logo-wrap .d-md-block.d-flex.justify-content-around {
+		justify-content: flex-start !important;
+	}
+	.theme-search-results-item-flight-sections .theme-search-results-item-flight-section > .row-no-gutter.row-eq-height.row > .col-md-2.col-12:last-child {
+		padding-left: 90px;
+	}
+	.theme-search-results-item-flight-section-airline-title {
+		font-size: 9px;
+		margin-top: 20px !important;
+	}
+	.theme-search-results-item.theme-search-results-item-rounded.theme-search-results-item- > .row.g-0 > .col-md-2 .d-md-block.d-flex.pe-3.ps-3.p-md-0 button.btn.btn-block strong {
+		margin-bottom: -22px;
+		color: #fff;
+		position: relative;
+	}
+	.theme-search-results-item-flight-section-path-line-dot {
+		display: none;
+	}
+	.theme-search-results-item-flight-section-path-line-title {
+		display: none;
+	}
+	.theme-search-results-item-flight-section-path-line-middle .theme-search-results-item-flight-section-path-line-title {
+		display: block;
+		margin-top: 0 !important;
+	}
+	.theme-search-results-item-flight-section-path-line-end {
+		margin-top: 15px;
+		right: 0;
+	}
+	.theme-search-results-item-rounded:has(.theme-search-results-item-preview + .theme-search-results-item-preview) {
+		border: 1px dashed #b9b9b9;
+	}
+	.theme-search-results-item-flight-section-path-line {
+		display: none;
+	}
+	.theme-search-results-item-rounded:not(:has(.theme-search-results-item-preview + .theme-search-results-item-preview)) > .row.g-0 > .col-md-2 .d-md-block.d-flex.pe-3.ps-3.p-md-0 button.btn.btn-block {
+		top: 83px;
+	}
+	.theme-search-results-item-rounded:not(:has(.theme-search-results-item-preview + .theme-search-results-item-preview)) > .row.g-0 > .col-md-2 .d-md-block.d-flex.pe-3.ps-3.p-md-0 p.d-flex.align-items-center.justify-content-center {
+		right: 147px;
+		top: 94px;
+		font-size: 12px;
+	}
+	.theme-search-results-item-rounded:not(:has(.theme-search-results-item-preview + .theme-search-results-item-preview)) > .row.g-0 > .col-md-2 .d-md-block.d-flex.pe-3.ps-3.p-md-0 p.d-flex.align-items-center.justify-content-center i.las.la-clipboard {
+		font-size: 19px !important;
+	}
+	.theme-search-results-item-rounded:not(:has(.theme-search-results-item-preview + .theme-search-results-item-preview)) > .row.g-0 {
+		padding-bottom: 18px;
+	}
+
+	/* Booking */
+	section.breadcrumb-area.bread-bg-flights > section.container[style*='padding:50px'] {
+		padding-top: 20px !important;
+		padding-bottom: 20px !important;
+	}
+	section.booking-area .col-md-6 > .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	section.booking-area .row.mt-3 {
+		margin-top: 0 !important;
+	}
+	section.booking-area .col-md-6 > .row .label-text {
+		padding-left: 0;
+	}
+	section.booking-area .col-md-12.mt-3 {
+		margin-top: 0 !important;
+		margin-bottom: 10px;
+	}
+	section.booking-area hr {
+		margin-bottom: 5px;
+	}
+	.form-box .form-check-input {
+		aspect-ratio: 1;
+	}
+	.form-box label.form-check-label span.d-block {
+		font-size: 14px;
+	}
+	.form-box label.form-check-label .d-flex.mb-2.input {
+		gap: 10px !important;
+	}
+	.custom-checkbox {
+		display: flex;
+		flex-direction: column;
+	}
+	.custom-checkbox label {
+		flex-wrap: wrap;
+		column-gap: 6px;
+	}
+	section.booking-area {
+		position: relative;
+		padding-bottom: 160px;
+	}
+	section.booking-area form > .col-lg-12 {
+		position: absolute;
+		bottom: 73px;
+	}
+	section.booking-area form > .col-lg-12:last-child {
+		bottom: 0;
+	}
+}
+@media (max-width: 380px) {
+	/* Home */
+	section.breadcrumb-area.bread-bg-flights .form-check {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0;
+		align-items: center;
+	}
+	section.breadcrumb-area.bread-bg-flights .form-check .form-check-input {
+		float: none;
+		margin-left: 0;
+	}
+	section.breadcrumb-area.bread-bg-flights .d-flex.justify-content-start.gap-4 {
+		justify-content: space-evenly !important;
+	}
+	.cd-main-content .search_filter_options + .col-md-9 .next-date-panel .d-flex.justify-content-between.gap-2.align-items-center {
+		justify-content: space-evenly !important;
+	}
+}
+@media (max-width: 340px) {
+	/* Home */
+	main.texttrans {
+		line-height: 30px;
+		margin-bottom: -20px;
+	}
+
+	/* Flights */
+	.cd-main-content .search_filter_options + .col-md-9 .next-date-panel .btn-primary {
+		font-size: 15px;
+	}
+}
